@@ -27,3 +27,8 @@ services:
 
   mongo:
     image: mongo
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
